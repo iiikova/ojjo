@@ -1,10 +1,24 @@
-import React from 'react'
+import React from "react";
 
-export default function Header() {
-    return (
+export default function Blog() {
+  return (
+    <div>
+      <div>
+        <h3>Полезные статьи</h3>
+        <h2>Лучшие советы по подбору дорогих подарков</h2>
         <div>
-            <header>navigation</header>
-            header
+          <div>
+            <p>Как выбрать часы для своей будущей жены</p>
+          </div>
+          <div>
+            <p>Запонки для мужа: 7 ключевых правил покупки аксессуара</p>
+          </div>
+          <div>
+            <p>Как выбрать обручальные кольца молодоженам</p>
+          </div>
         </div>
-    )
+        <button>читать наш блог</button>
+      </div>
+    </div>
+  );
 }
