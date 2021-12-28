@@ -1,0 +1,44 @@
+.outer {
+  width: 100%;
+  .inner {
+    padding: 100px 0;
+    width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+    h3 {
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 21px;
+      line-height: 140%;
+      text-align: center;
+      color: #333333;
+      padding-bottom: 15px;
+    }
+    h2 {
+      font-family: Noto Serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 41px;
+      text-align: center;
+      color: #333333;
+      padding-bottom: 45px;
+    }
+  }
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    img {
+        display: flex;
+       flex-grow: 1;
+        max-height: 297px;
+    }
+  }
+
+}

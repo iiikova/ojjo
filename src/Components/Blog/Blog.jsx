@@ -1,20 +1,27 @@
 import React from "react";
+import s from './Blog.module.scss'
 
 export default function Blog() {
   return (
-    <div>
-      <div>
+    <div className={s.outer}>
+      <div className={s.inner}>
         <h3>Полезные статьи</h3>
         <h2>Лучшие советы по подбору дорогих подарков</h2>
-        <div>
+        <div className={s.items}>
           <div>
-            <p>Как выбрать часы для своей будущей жены</p>
+            <p>Как выбрать
+            <br /> часы для своей
+            <br /> будущей жены</p>
           </div>
           <div>
-            <p>Запонки для мужа: 7 ключевых правил покупки аксессуара</p>
+            <p>Запонки для мужа:
+            <br /> 7 ключевых правил
+            <br /> покупки аксессуара</p>
           </div>
           <div>
-            <p>Как выбрать обручальные кольца молодоженам</p>
+            <p>Как выбрать
+            <br /> обручальные кольца 
+            <br /> молодоженам</p>
           </div>
         </div>
         <button>читать наш блог</button>
