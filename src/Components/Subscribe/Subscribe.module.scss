@@ -1,0 +1,76 @@
+.outer {
+  width: 100%;
+  background-image: url("../../img/bg_double_boble.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .inner {
+    padding: 100px 0;
+    max-width: 1100px;
+    margin: 0 auto;
+    h3 {
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 21px;
+      line-height: 140%;
+      text-align: center;
+      color: #ffffff;
+      padding-bottom: 15px;
+    }
+    h2 {
+      font-family: Noto Serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 41px;
+      text-align: center;
+      color: #ffffff;
+      padding-bottom: 45px;
+    }
+    .subscribe {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      color: #ffffff;
+      padding: 0 80px;
+      .info {
+        text-align: left;
+
+        p {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          span {
+            padding-right: 8px;
+          }
+        }
+      }
+      .input_outer {
+        padding: 10px;
+        border: 1px solid #ffffff;
+        .input_inner {
+          width: 418px;
+          height: 85px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #fff;
+          padding: 20px;
+          input {
+            padding: 14px 35px;
+            text-transform: uppercase;
+          }
+          button {
+            margin-left: 10px;
+            padding: 14px 35px;
+            text-transform: uppercase;
+            color: #fff;
+            background: #333333;
+            border: 0px transparent;
+          }
+        }
+      }
+    }
+  }
+}
