@@ -1,4 +1,5 @@
 @import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
 
 .outer {
   width: 100%;
@@ -6,11 +7,11 @@
     @include inner;
     h3 {
       @include h3;
-      color: #333333;
+      color: $clr_secondary;
     }
     h2 {
       @include h2;
-      color: #333333;
+      color: $clr_secondary;
     }
     p {
     @include p;
@@ -20,9 +21,9 @@
     button {
       @include button;
       margin: 0;
-      background: #333333;
+      background: $clr_secondary;
       border: 0px solid transparent;
-      color: #ffff;
+      color: $clr_whtie;
     }
   }
 }
@@ -45,7 +46,7 @@
     p {
       @include p;
       font-size: 21px;
-      color: #ffffff;
+      color: $clr_whtie;
       padding-bottom: 20px;
     }
   }

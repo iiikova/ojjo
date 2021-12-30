@@ -1,4 +1,5 @@
-@import '../../sass/mixins.scss';
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
 
 .outer {
   @include outer;
@@ -6,17 +7,17 @@
     @include inner;
     h3 {
       @include h3;
-      color: #ffffff;
+      color: $clr_whtie;
     }
     h2 {
       @include h2;
-      color: #ffffff;
+      color: $clr_whtie;
     }
     .subscribe {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      color: #ffffff;
+      color: $clr_whtie;
       padding: 0 80px;
       .info {
         text-align: left;
@@ -31,14 +32,14 @@
       }
       .input_outer {
         padding: 10px;
-        border: 1px solid #ffffff;
+        border: 1px solid $clr_whtie;
         .input_inner {
           width: 418px;
           height: 85px;
           display: flex;
           justify-content: center;
           align-items: center;
-          background-color: #fff;
+          background-color: $clr_whtie;
           padding: 20px;
           input {
             padding: 14px 35px;
@@ -48,8 +49,8 @@
             margin-left: 10px;
             padding: 14px 35px;
             text-transform: uppercase;
-            color: #fff;
-            background: #333333;
+            color: $clr_whtie;
+            background: $clr_secondary;
             border: 0px transparent;
           }
         }

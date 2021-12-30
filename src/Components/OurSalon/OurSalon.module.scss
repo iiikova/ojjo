@@ -1,10 +1,11 @@
 @import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
 
 .outer {
   @include outer;
   .inner {
     @include inner;
-    color: #ffffff;
+    color: $clr_whtie;
     h3 {
       @include h3;
     }
@@ -13,7 +14,7 @@
     }
     p {
       @include p;
-      color: #ffffff;
+      color: $clr_whtie;
       width: 730px;
       margin: 0 auto;
     }

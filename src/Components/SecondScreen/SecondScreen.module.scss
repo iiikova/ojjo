@@ -1,4 +1,5 @@
 @import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
 
 .outer {
   .inner {
@@ -10,11 +11,11 @@
     .main {
       h3 {
         @include h3;
-        color: #333333;
+        color: $clr_secondary;
       }
       h2 {
         @include h2;
-        color: #333333;
+        color: $clr_secondary;
       }
       .links {
         display: flex;
@@ -41,8 +42,8 @@
           }
         }
         .active {
-          background: #333333;
-          color: #ffff;
+          background: $clr_secondary;
+          color: $clr_whtie;
         }
       }
       .category {
@@ -66,7 +67,7 @@
             line-height: 28px;
             letter-spacing: 0.1em;
             text-transform: uppercase;
-            color: #ffffff;
+            color: $clr_whtie;
           }
         }
         div:nth-child(1) {
