@@ -1,34 +1,20 @@
+@import "../../sass/mixins.scss";
+
 .outer {
-  width: 100%;
   .inner {
-    height: 100%;
-    width: 1100px;
-    margin: 0 auto;
+    @include inner;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 0;
     .main {
       h3 {
-        font-family: Gilroy;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 21px;
-        line-height: 140%;
-        text-align: center;
+        @include h3;
         color: #333333;
-        margin-bottom: 15px;
       }
       h2 {
-        font-family: Noto Serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 30px;
-        line-height: 41px;
-        text-align: center;
+        @include h2;
         color: #333333;
-        margin-bottom: 60px;
       }
       .links {
         display: flex;
@@ -47,16 +33,12 @@
           flex: 1 1 auto;
           margin: 5px;
           p {
-            font-family: Gilroy;
-            font-style: normal;
+            @include p;
             font-weight: 500;
-            font-size: 18px;
             line-height: 21px;
-            text-align: center;
             letter-spacing: 0.1em;
             text-transform: uppercase;
           }
-         
         }
         .active {
           background: #333333;
@@ -77,52 +59,39 @@
           flex: 1 1 auto;
           margin: 5px;
           p {
+            @include p;
             padding-bottom: 20px;
-            font-family: Gilroy;
-            font-style: normal;
             font-weight: 500;
             font-size: 24px;
             line-height: 28px;
-            text-align: center;
             letter-spacing: 0.1em;
             text-transform: uppercase;
             color: #ffffff;
           }
         }
-        div:nth-child(1){
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-image: url('../../img/category/Rectangle\ 5.png');
+        div:nth-child(1) {
+          @include img;
+          background-image: url("../../img/category/Rectangle\ 5.png");
         }
-        div:nth-child(2){
-            background-position: center;
-            background-size: cover;
-            background-image: url('../../img/category/Rectangle\ 5\ \(1\).png');
+        div:nth-child(2) {
+          @include img;
+          background-image: url("../../img/category/Rectangle\ 5\ \(1\).png");
         }
-        div:nth-child(3){
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-image: url('../../img/category/Rectangle\ 5\ \(2\).png');
+        div:nth-child(3) {
+          @include img;
+          background-image: url("../../img/category/Rectangle\ 5\ \(2\).png");
         }
-        div:nth-child(4){
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-image: url('../../img/category/Rectangle\ 5\ \(3\).png');
+        div:nth-child(4) {
+          @include img;
+          background-image: url("../../img/category/Rectangle\ 5\ \(3\).png");
         }
-        div:nth-child(5){
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-image: url('../../img/category/Rectangle\ 5\ \(4\).png');
+        div:nth-child(5) {
+          @include img;
+          background-image: url("../../img/category/Rectangle\ 5\ \(4\).png");
         }
-        div:nth-child(6){
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-image: url('../../img/category/Rectangle\ 5\ \(5\).png');
+        div:nth-child(6) {
+          @include img;
+          background-image: url("../../img/category/Rectangle\ 5\ \(5\).png");
         }
       }
     }

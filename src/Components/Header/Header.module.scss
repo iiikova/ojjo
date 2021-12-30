@@ -1,14 +1,8 @@
 @import "./../../sass/mixins.scss";
-hr {
-  width: 100% !important;
-}
+
 .outer {
-  width: 100%;
+  @include outer;
   background-image: url("./..//../img/bgc.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
 }
 .inner {
   height: 100vh;
