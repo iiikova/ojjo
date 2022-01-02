@@ -14,7 +14,7 @@
       color: $clr_secondary;
     }
     p {
-    @include p;
+      @include p;
       margin: 0 auto;
       width: 200px;
     }
@@ -30,36 +30,22 @@
 .items {
   display: flex;
   justify-content: space-between;
-  margin: -5px;
   flex-wrap: wrap;
   padding-bottom: 60px;
   div {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
+    position: relative;
     width: 350px;
     height: 370px;
-    flex: 1 1 auto;
-    margin: 5px;
-    box-sizing: border-box;
+    p {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
     p {
       @include p;
       font-size: 21px;
       color: $clr_whtie;
-      padding-bottom: 20px;
     }
-  }
-  div:nth-child(1) {
-    @include img;
-    background-image: url("../../img/category/Rectangle\ 5.png");
-  }
-  div:nth-child(2) {
-    @include img;
-    background-image: url("../../img/category/Rectangle\ 5\ \(1\).png");
-  }
-  div:nth-child(3) {
-    @include img;
-    background-image: url("../../img/category/Rectangle\ 5\ \(2\).png");
   }
 }

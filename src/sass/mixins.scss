@@ -14,7 +14,7 @@
 
 @mixin inner {
   padding: 100px 0;
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
